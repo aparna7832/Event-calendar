@@ -18,3 +18,6 @@ In the future, when the endpoint for POST request is known, we can add a button 
 Popover: 
 Double Clicking a calendar cell will open a popover dialog to display the selected event's title and the short description. This popover will be removed when the month is changed. 
 
+Note: 
+To run the application locally, give the command "npm install" to add all the node_modules dependencies for this app. 
+
