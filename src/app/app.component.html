@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <full-calendar (dayRender)="dayRender($event)" [events]="calendarEvents" [plugins]="calendarPlugins" [header]="{
+    left: 'title',
+    center: 'dayGridMonth, dayGridWeek, dayGridDay, listWeek, listDay',
+    right: 'today prev, next'
+  }" [buttonText]="{
+    listWeek: 'List Week',
+    dayGridMonth: 'Month',
+    dayGridWeek: 'Week',
+    dayGridDay: 'Day',
+    listDay: 'List Day',
+    today: 'Today'
+  }" (eventRender)="addingPopOver($event)" (datesDestroy)="disablingPopOver()">
+  </full-calendar>
+</div>
+
+<router-outlet></router-outlet>
